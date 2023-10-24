@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title>Safe Travels</title>
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+	</head>
+	<body>	
+		<nav>
+			<ul>  
+				<li class="navButton">BOARD</li>
+				<li class="navButton">CUISINE</li>
+				<li class="navButton">TOURIST SPOTS</li>
+				<li class="navButton"><a href="index.html">HOME</li></a>
+            </ul>
+			<img src="airp.png" alt="" class="logo" > 
+			<h1 class="title">Safe Travels</h1>
+		</nav>
+		<center>
+		
+			<div>
+				<img class="cover" src="coverpic1.jpg" > 
+			</div>
+			<div class="content">		
+				<h2> Ready to go on an
+				<br> advnture?</h2>
+				<p>Take a quick trip to the world <br> of tourism.</p>
+				<button type="button" onclick="document.location='explore.html'" >EXPLORE</button>
+			</div>
+			<div class="prevcol">
+				<img src="prev1.jpg" style="width:15%">
+				<img src="prev2.jpg" style="width:15%">
+				<img src="prev3.jpg" style="width:15%">
+			</div>
+		</center>	
+	</body>
+	<style>
+	  html, body{
+			    max-width: 100%;
+			    overflow-x: hidden;
+				}
+				
+			body{
+				background-color: #EFEAE4;
+				margin:0;
+			}
+			 nav{
+				padding-bottom: 7px;
+				border-bottom: 1px solid black;
+				width: 100%;
+				overflow:none;
+				positon: fixed;
+				}
+				
+	  .navButton{
+				color: #382321;
+				list-style-type: none;
+				float: right;
+				padding:20px;
+				font-weight: bold;
+				margin: 0 20px;
+				font-size: 12px;
+				position: relative;
+				font-family: Montserrat, sans-serif;
+				}
+				
+.navButton::after{
+				content:'';
+				height: 2px;
+				width: 0%;
+				position:absolute;
+				left: 0;
+				bottom: +10px;
+				background-color: black;
+				transition:0.5s;
+				}
+							
+.navButton:hover::after{
+						width:100%;
+					   }
+										
+	 nav ul li a{
+			    text-decoration: none;
+				color: #382321;
+				}
+	
+	 nav ul li a{
+				text-decoration: none;
+				color: #382321;
+			    }
+				
+		   .logo{
+				height:60px;
+				float: left;
+				padding-left:20px;
+				margin:0px;
+				}
+				
+		  .title{
+			    font-size:30px;
+			    padding-top: 8px;
+			    color: #5c403e;
+		   	    text-indent: 20px;
+				font-family: League Spartan;
+				}
+				
+		 .cover {
+                margin-top: 30px;
+				height: 360px;
+				border: 3px double #5c403e;
+				padding:5px
+			    }
+		
+		.content{
+				float:left;
+				text-align:justify;
+				margin-left:130px;
+				padding-right:70px;
+				}
+		     
+ 			  p {
+		        font-family: Montserrat;
+		        }
+		    
+			  h2{
+	        	font-family:'League Spartan'; 
+				}
+				
+	    .prevcol{
+				padding-top:30px;
+				margin: 0;
+				width:100%;
+				padding-left:30px;
+				margin-right:100px;
+				}
+	
+		 button {
+				width:200px;
+				border-radius:25px;
+				font-weight: bold;
+				padding:15px 0;
+				text-decoration:none;
+				background-color:#ABA29B    ;
+				cursor:pointer;
+				color:white;
+				font-family:Montserrat;
+				}
+	
+	</style>
